@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanessa Pemba Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    .section-padding { padding: 2rem 1rem; }
+  </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen font-sans">
+
+  <!-- Navigation Bar -->
+  <nav class="flex justify-between items-center p-6 bg-gray-800">
+    <h1 class="text-2xl font-bold text-blue-400">Vanessa Pemba</h1>
+    <div class="space-x-6">
+      <a href="#about" class="hover:text-blue-400">About Me</a>
+      <a href="#skills" class="hover:text-blue-400">Skills</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Time-based Greeting -->
+  <section class="text-center py-10">
+    <h2 class="text-3xl font-semibold text-blue-400" id="greeting"></h2>
+  </section>
+
+  <script>
+    function getGreeting() {
+      const hours = new Date().getHours();
+      let greeting = "Hello! 👋";
+      if (hours < 12) {
+        greeting = "Good Morning! 👋";
+      } else if (hours < 18) {
+        greeting = "Good Afternoon! 👋";
+      } else {
+        greeting = "Good Evening! 👋";
+      }
+      document.getElementById('greeting').innerText = greeting;
+    }
+    getGreeting();
+  </script>
+
+  <!-- Hero Section with Picture and Greeting -->
+  <section class="flex flex-col items-center justify-center text-center p-10 space-y-4">
+    <img
+      src="profile.jpg"
+      alt="Vanessa Pemba"
+      class="w-48 h-64 object-cover rounded-lg border-4 border-blue-500"
+    />
+    <h2 class="text-3xl font-semibold mt-4">Aspiring Web Developer</h2>
+    <p class="text-gray-300 mt-2 max-w-md">
+      Passionate about creating digital experiences with clean code and modern designs.
+      Currently mastering JavaScript, React, and Tailwind CSS.
+    </p>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section-padding text-center">
+    <h3 class="text-2xl font-bold text-blue-400">About Me</h3>
+    <p class="text-gray-300 max-w-lg mx-auto mt-6">
+      Hi! I'm Vanessa Pemba, an aspiring web developer passionate about creating innovative and engaging digital solutions. 
+      I specialize in front-end development, and I enjoy building modern, responsive, and user-friendly websites using 
+      tools like React, JavaScript, and Tailwind CSS. Thanks for visiting my portfolio, and I look forward to connecting with you!
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section-padding text-center">
+    <h3 class="text-2xl font-bold text-blue-400">My Skills</h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6 text-gray-300">
+      <div class="bg-gray-800 p-4 rounded-lg">HTML</div>
+      <div class="bg-gray-800 p-4 rounded-lg">CSS</div>
+      <div class="bg-gray-800 p-4 rounded-lg">JavaScript</div>
+      <div class="bg-gray-800 p-4 rounded-lg">React</div>
+      <div class="bg-gray-800 p-4 rounded-lg">Tailwind CSS</div>
+      <div class="bg-gray-800 p-4 rounded-lg">Java</div>
+      <div class="bg-gray-800 p-4 rounded-lg">C Programming</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding text-center">
+    <h3 class="text-2xl font-bold text-blue-400">Projects</h3>
+    <div class="mt-6">
+      <h4 class="text-xl text-gray-300">Currently Developing: My Portfolio</h4>
+      <p class="text-gray-300 mt-4 max-w-lg mx-auto">
+        I'm working on building my personal portfolio to showcase my skills, projects, and experience as a developer. Stay tuned for more!
+      </p>
+    </div>
+  </section>
+
+  <!-- Send Me a Message Section -->
+  <section class="section-padding text-center" id="send-message">
+    <div class="mt-8 bg-gray-800 p-6 rounded-lg w-full max-w-xl mx-auto">
+      <h4 class="text-xl text-blue-400">Send Me a Message</h4>
+      <form action="#" method="POST" class="space-y-4 mt-4">
+        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 bg-gray-700 text-white rounded-lg" required />
+        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 bg-gray-700 text-white rounded-lg" required />
+        <textarea name="message" placeholder="Your Message" rows="4" class="w-full p-3 bg-gray-700 text-white rounded-lg" required></textarea>
+        <button type="submit" class="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-400">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact Section with Links -->
+  <section id="contact" class="section-padding text-center">
+    <h3 class="text-2xl font-bold text-blue-400">Contact Me</h3>
+    <div class="mt-6 space-y-4">
+      <p class="text-gray-300 flex justify-center items-center space-x-2">
+        <i class="fas fa-envelope"></i> <span>Email: pembavanessa51@gmail.com</span>
+      </p>
+      <p class="text-gray-300 flex justify-center items-center space-x-2">
+        <i class="fas fa-phone"></i> <span>Phone: +265885610010</span>
+      </p>
+      <p class="text-gray-300 flex justify-center items-center space-x-2">
+        <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/vanessapemba" class="hover:text-blue-400">LinkedIn</a>
+      </p>
+      <p class="text-gray-300 flex justify-center items-center space-x-2">
+        <i class="fab fa-github"></i> <a href="https://github.com/vanessapemba" class="hover:text-blue-400">GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Final Thank You Section -->
+  <section class="text-center py-10">
+    <p class="text-gray-300 text-xl">Thanks for interacting with me! 😊</p>
+  </section>
+
+</body>
+</html>

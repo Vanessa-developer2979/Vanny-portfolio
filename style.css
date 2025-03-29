@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Profile Picture Styling - Square */
+#about img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #00b5b5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* About Text Styling */
+#about h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00b5b5;
+}
+
+/* Projects Section */
+#projects .bg-gray-800 {
+    background-color: #1f2937;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+#contact p {
+    color: #d1d5db;
+    font-size: 1rem;
+}
+
+/* Social Media Icons - Added More Space */
+#contact img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+#contact img:hover {
+    transform: scale(1.2);
+}
